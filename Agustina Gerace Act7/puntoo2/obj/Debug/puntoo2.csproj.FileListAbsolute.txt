@@ -1,0 +1,7 @@
+C:\Users\alumno\source\repos\Agustina Gerace Act7\puntoo2\obj\Debug\puntoo2.csproj.AssemblyReference.cache
+C:\Users\alumno\source\repos\Agustina Gerace Act7\puntoo2\obj\Debug\puntoo2.csproj.CoreCompileInputs.cache
+C:\Users\alumno\source\repos\Agustina Gerace Act7\puntoo2\bin\Debug\puntoo2.exe.config
+C:\Users\alumno\source\repos\Agustina Gerace Act7\puntoo2\bin\Debug\puntoo2.exe
+C:\Users\alumno\source\repos\Agustina Gerace Act7\puntoo2\bin\Debug\puntoo2.pdb
+C:\Users\alumno\source\repos\Agustina Gerace Act7\puntoo2\obj\Debug\puntoo2.exe
+C:\Users\alumno\source\repos\Agustina Gerace Act7\puntoo2\obj\Debug\puntoo2.pdb

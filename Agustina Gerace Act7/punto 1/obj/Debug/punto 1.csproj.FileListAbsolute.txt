@@ -1,0 +1,7 @@
+C:\Users\alumno\source\repos\Agustina Gerace Act7\punto 1\obj\Debug\punto 1.csproj.AssemblyReference.cache
+C:\Users\alumno\source\repos\Agustina Gerace Act7\punto 1\obj\Debug\punto 1.csproj.CoreCompileInputs.cache
+C:\Users\alumno\source\repos\Agustina Gerace Act7\punto 1\bin\Debug\punto 1.exe.config
+C:\Users\alumno\source\repos\Agustina Gerace Act7\punto 1\bin\Debug\punto 1.exe
+C:\Users\alumno\source\repos\Agustina Gerace Act7\punto 1\bin\Debug\punto 1.pdb
+C:\Users\alumno\source\repos\Agustina Gerace Act7\punto 1\obj\Debug\punto 1.exe
+C:\Users\alumno\source\repos\Agustina Gerace Act7\punto 1\obj\Debug\punto 1.pdb
