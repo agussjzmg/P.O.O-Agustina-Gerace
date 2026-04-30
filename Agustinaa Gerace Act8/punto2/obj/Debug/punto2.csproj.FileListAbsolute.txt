@@ -1,0 +1,7 @@
+C:\Users\shasb\source\repos\Agustinaa Gerace Act8\punto2\bin\Debug\punto2.exe.config
+C:\Users\shasb\source\repos\Agustinaa Gerace Act8\punto2\bin\Debug\punto2.exe
+C:\Users\shasb\source\repos\Agustinaa Gerace Act8\punto2\bin\Debug\punto2.pdb
+C:\Users\shasb\source\repos\Agustinaa Gerace Act8\punto2\obj\Debug\punto2.csproj.AssemblyReference.cache
+C:\Users\shasb\source\repos\Agustinaa Gerace Act8\punto2\obj\Debug\punto2.csproj.CoreCompileInputs.cache
+C:\Users\shasb\source\repos\Agustinaa Gerace Act8\punto2\obj\Debug\punto2.exe
+C:\Users\shasb\source\repos\Agustinaa Gerace Act8\punto2\obj\Debug\punto2.pdb
