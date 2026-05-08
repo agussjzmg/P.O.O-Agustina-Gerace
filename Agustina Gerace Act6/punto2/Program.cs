@@ -8,6 +8,8 @@ namespace punto2
 {
     // Punto 2: Desarrollar una clase que represente un Cuadrado y permita cargar el valor
     // del lado e imprimir su perímetro y su superficie.
+    //Correcciones:
+    //1) En el punto 1, encerras la clase principal (Main) dentro de otra clase. Esto mismo pasa en los puntos 2, 3 y 4.
 
     class Cuadrado
     {
@@ -30,10 +32,6 @@ namespace punto2
             float superficie = lado * lado;
             Console.WriteLine("La superficie es de: " + superficie);
         }
-    }
-
-    class Program
-    {
         static void Main(string[] args)
         {
             Cuadrado cuadrado = new Cuadrado();
