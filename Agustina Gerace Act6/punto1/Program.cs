@@ -8,6 +8,8 @@ namespace punto1
 {
     // Punto 1: Desarrollar una clase que represente un punto en el plano y permita cargar
     // los valores de x e y, e imprimir en que cuadrante se encuentra.
+    //Correcciones:
+    //1) En el punto 1, encerras la clase principal (Main) dentro de otra clase. Esto mismo pasa en los puntos 2, 3 y 4.
 
 
     class Puntos
@@ -37,10 +39,7 @@ namespace punto1
             else
                 Console.WriteLine("El punto se encuentra sobre un eje");
         }
-    }
 
-    class Program
-    {
         static void Main(string[] args)
         {
             Puntos puntos = new Puntos();
