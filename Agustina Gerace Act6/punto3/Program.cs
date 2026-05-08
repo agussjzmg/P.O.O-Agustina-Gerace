@@ -8,6 +8,8 @@ namespace punto3
 {
     // Punto 3: Confeccionar una clase que represente un empleado con nombre y sueldo.
     // Cargar datos, imprimirlos y mostrar si debe pagar impuestos (sueldo > 3000).
+    //Correcciones:
+    //1) En el punto 1, encerras la clase principal (Main) dentro de otra clase. Esto mismo pasa en los puntos 2, 3 y 4.
 
     class Empleado
     {
@@ -36,10 +38,6 @@ namespace punto3
             else
                 Console.WriteLine("No debe pagar impuestos");
         }
-    }
-
-    class Program
-    {
         static void Main(string[] args)
         {
             Empleado empleado = new Empleado();
