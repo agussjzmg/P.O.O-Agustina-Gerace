@@ -11,7 +11,9 @@ namespace punto_1
     /*1. Desarrollar un programa que permita ingresar un vector de 8 elementos, e informe:
     El valor acumulado de todos los elementos del vector.
     El valor acumulado de los elementos del vector que sean mayores a 36.
-    Cantidad de valores mayores a 50. */
+    Cantidad de valores mayores a 50. 
+    Correcciones a realizar:
+    1) En el punto 1, se pide la CANTIDAD de valores mayores a 50, no el valor acumulado.*/
 
 
     class punto1
@@ -42,7 +44,7 @@ namespace punto_1
                     val2= val2 + vector[i];
                 }
                if  (vector[i] > 50 ) {
-                    val3 = val3 + vector[i];
+                   val3++;
                 }
             }
             Console.WriteLine("El numero acumulado de los elementos es: " + val);
