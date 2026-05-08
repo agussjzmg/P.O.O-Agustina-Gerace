@@ -8,6 +8,8 @@ namespace punto4
 {
     // Punto 4: Implementar la clase Operaciones. Cargar dos valores enteros y calcular
     // suma, resta, multiplicación y división, cada una en un método.
+    //Correcciones:
+    //1) En el punto 1, encerras la clase principal (Main) dentro de otra clase. Esto mismo pasa en los puntos 2, 3 y 4.
 
     class Operaciones
     {
@@ -53,10 +55,6 @@ namespace punto4
                 Console.WriteLine("Y por último, no se puede dividir por cero");
             }
         }
-    }
-
-    class Program
-    {
         static void Main(string[] args)
         {
             Operaciones operaciones = new Operaciones();
