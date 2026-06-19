@@ -58,7 +58,7 @@ namespace punto3
         private int cilindrada;
         public Moto()
         {
-            Console.Write("ingresar la cantida de puertas del auto: ");
+            Console.Write("ingresar la cilindrada de la moto: ");
             string linea = Console.ReadLine();
             cilindrada = int.Parse(linea);
         }
