@@ -27,10 +27,10 @@ namespace punto3
             set { vel = value; }
             get { return vel; }
         }
-        public Vehículo()
+        public Vehiculo()
         {
-            Marca = marca;
-            Vel = vel;
+            Marca= marca;
+            Vel= vel;
         }
     }
     class Auto : Vehículo
@@ -41,8 +41,13 @@ namespace punto3
             set { puertas = value; }
             get { return puertas; }
         }
+        public Auto() 
+        {
+        Puertas = puertas;
+        }
         public void imprimir()
         {
+            Console.WriteLine("Auto: ");
             Console.WriteLine("velocidad del auto: " + Vel);
             Console.WriteLine("marca del auto: " + Marca);
             Console.WriteLine("cantidad de puertas del auto: " + puertas);
@@ -57,8 +62,13 @@ namespace punto3
             set { cilindrada = value; }
             get { return cilindrada; }
         }
+        public Moto() 
+        {
+        Cili = cilindrada;
+        }
         public void imprimirm()
         {
+            Console.WriteLine("Moto: ");
             Console.WriteLine("velocidad de la moto: " + Vel);
             Console.WriteLine("marca de la moto: " + Marca);
             Console.WriteLine("cilindrada de la moto: " + cilindrada);
