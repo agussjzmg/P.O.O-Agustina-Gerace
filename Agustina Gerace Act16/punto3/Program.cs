@@ -27,6 +27,11 @@ namespace punto3
             set { vel = value; }
             get { return vel; }
         }
+        public Vehículo()
+        {
+            Marca = marca;
+            Vel = vel;
+        }
     }
     class Auto : Vehículo
     {
