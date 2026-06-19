@@ -71,10 +71,10 @@ namespace punto3
         }
         static void Main(string[] args)
         {
-            Auto A = new Auto();
-            A.imprimir();
-            Moto moto = new Moto();
-            moto.imprimir();
+            Auto a = new Auto();
+            a.imprimir();
+            Moto m = new Moto();
+            m.imprimir();
             Console.ReadKey();
         }
     }
