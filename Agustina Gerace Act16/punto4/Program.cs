@@ -61,7 +61,8 @@ namespace punto4
         }
         static void Main(string[] args)
         {
-            Perro perro = new Perro();
+            //Mamifero m = new Mamifero();
+            Perro p = new Perro();
             Console.ReadKey();
         }
     }
