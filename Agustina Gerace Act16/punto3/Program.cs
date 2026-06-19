@@ -27,7 +27,7 @@ namespace punto3
             set { vel = value; }
             get { return vel; }
         }
-        public Vehiculo()
+        public Vehiculo(string marca, float vel)
         {
             Marca= marca;
             Vel= vel;
@@ -35,13 +35,13 @@ namespace punto3
     }
     class Auto : Vehículo
     {
-        private int puertas;
+        protected int puertas;
         public int Puertas
         {
             set { puertas = value; }
             get { return puertas; }
         }
-        public Auto() 
+        public Auto(string marca, float vel, int puertas) : base (marca, vel)
         {
         Puertas = puertas;
         }
@@ -56,13 +56,13 @@ namespace punto3
     }
     class Moto : Vehículo
     {
-        private int cilindrada;
+        protected int cilindrada;
         public int Cili
         {
             set { cilindrada = value; }
             get { return cilindrada; }
         }
-        public Moto() 
+        public Moto(string marca, float vel, int cilindrada) : base (marca, vel) 
         {
         Cili = cilindrada;
         }
