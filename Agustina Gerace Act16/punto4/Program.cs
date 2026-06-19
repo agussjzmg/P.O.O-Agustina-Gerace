@@ -19,12 +19,6 @@ namespace punto4
     class Animal
     {
         protected string especie;
-        public Animal()
-        {
-            Console.Write("ingresar nombre de la especie: ");
-            especie = Console.ReadLine();
-            Console.WriteLine("nombre de la especie: " + especie);
-        }
         public string Especie
         {
             set {
@@ -36,33 +30,46 @@ namespace punto4
     class Mamifero : Animal
     {
         protected string alim;
-        public Mamifero()
-        {
-            Console.Write("ingresar tipo de alimentacion del mamifero: ");
-            alim = Console.ReadLine();
-            Console.WriteLine("tipo de alimentacion: " + alim);
-        }
-        public string Alim
+        public string TipoAlim
         {
             set { 
                 alim = value;}
             get { 
                 return alim;  }
         }
+        public void imprimirA() 
+        {
+        Console.WriteLine("Mamiferos:");
+        Console.WriteLine("su especie es " + Especie);
+        Console.WriteLine("su tipo de alimentacion es " + TipoAlim);
+        }
     }
     class Perro : Mamifero
     {
         private string nombre;
-        public Perro()
+         public string Nombrep
         {
-            Console.Write("ingresar nombre del perro: ");
-            nombre = Console.ReadLine();
-            Console.WriteLine("nombre del perro: " + nombre);
+            set { 
+                nombre = value;}
+            get { 
+                return nombre;  }
+        }
+         public void imprimirP() 
+        {
+        Console.WriteLine("Perros:");
+        Console.WriteLine("su especie es " + Especie);
+        Console.WriteLine("su nombre es " + Nombrep);
         }
         static void Main(string[] args)
         {
-            //Mamifero m = new Mamifero();
+            Mamifero m = new Mamifero();
+            m.Especie = "herbívoros";
+            m.TipoAlim= "plantas";
+            m.ImprimirA();
             Perro p = new Perro();
+            p.Especie = "carnivoro"
+            p.Nombrep = "Luna";
+            p.ImprimirP();
             Console.ReadKey();
         }
     }
