@@ -17,14 +17,6 @@ namespace punto3
     {
         protected string marca;
         protected float vel;
-        public Vehículo()
-        {
-            Console.Write("ingresar marca: ");
-            Marca = Console.ReadLine();
-            Console.Write("ingresar velocidad maxima: ");
-            string linea = Console.ReadLine();
-            Vel = float.Parse(linea);
-        }
         public string Marca
         {
             set { marca = value; }
@@ -39,11 +31,10 @@ namespace punto3
     class Auto : Vehículo
     {
         private int puertas;
-        public Auto()
+        public int Puertas
         {
-            Console.Write("ingresar la cantida de puertas del auto: ");
-            string linea = Console.ReadLine();
-            puertas = int.Parse(linea);
+            set { puertas = value; }
+            get { return puertas; }
         }
         public void imprimir()
         {
@@ -56,13 +47,12 @@ namespace punto3
     class Moto : Vehículo
     {
         private int cilindrada;
-        public Moto()
+        public int Cili
         {
-            Console.Write("ingresar la cilindrada de la moto: ");
-            string linea = Console.ReadLine();
-            cilindrada = int.Parse(linea);
+            set { cilindrada = value; }
+            get { return cilindrada; }
         }
-        public void imprimir()
+        public void imprimirm()
         {
             Console.WriteLine("velocidad de la moto: " + Vel);
             Console.WriteLine("marca de la moto: " + Marca);
@@ -72,9 +62,15 @@ namespace punto3
         static void Main(string[] args)
         {
             Auto a = new Auto();
+            a.Marca = "Honda";
+            a.Vel = 9999;
+            a.Puertas = 4;
             a.imprimir();
             Moto m = new Moto();
-            m.imprimir();
+            m.Marca= "Yamaha";
+            m.Vel = 100;
+            m.Cili = 600;
+            m.imprimirm();
             Console.ReadKey();
         }
     }
