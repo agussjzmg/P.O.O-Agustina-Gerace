@@ -1,7 +1,0 @@
-C:\Users\alumno.ET26\Desktop\A.G\Agustina Gerace Act17\punto3\bin\Debug\punto3.exe.config
-C:\Users\alumno.ET26\Desktop\A.G\Agustina Gerace Act17\punto3\bin\Debug\punto3.exe
-C:\Users\alumno.ET26\Desktop\A.G\Agustina Gerace Act17\punto3\bin\Debug\punto3.pdb
-C:\Users\alumno.ET26\Desktop\A.G\Agustina Gerace Act17\punto3\obj\Debug\punto3.csproj.AssemblyReference.cache
-C:\Users\alumno.ET26\Desktop\A.G\Agustina Gerace Act17\punto3\obj\Debug\punto3.csproj.CoreCompileInputs.cache
-C:\Users\alumno.ET26\Desktop\A.G\Agustina Gerace Act17\punto3\obj\Debug\punto3.exe
-C:\Users\alumno.ET26\Desktop\A.G\Agustina Gerace Act17\punto3\obj\Debug\punto3.pdb
