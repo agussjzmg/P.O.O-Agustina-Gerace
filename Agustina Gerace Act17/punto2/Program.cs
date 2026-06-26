@@ -35,10 +35,10 @@ namespace punto2
                 Console.Write("Ingrese la duracion en minutos: ");
                 linea = Console.ReadLine();
                 duramin = double.Parse(linea);
-                if (duramin < 0)
+                if (duramin <= 0)
                     Console.WriteLine("la duración tiene que ser mayor a 0.");
             }
-            while (duramin > 0);
+            while (duramin <= 0);
 
             Console.Write("Ingrese su calificación (del 1 al 5, otro número fuera de este rango será denominado como 1): ");
             linea = Console.ReadLine();
