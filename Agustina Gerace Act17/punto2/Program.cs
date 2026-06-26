@@ -35,7 +35,7 @@ namespace punto2
                 Console.Write("Ingrese la duracion en minutos: ");
                 linea = Console.ReadLine();
                 duramin = double.Parse(linea);
-                if (duramin > 0)
+                if (duramin < 0)
                     Console.WriteLine("la duración tiene que ser mayor a 0.");
             }
             while (duramin > 0);
