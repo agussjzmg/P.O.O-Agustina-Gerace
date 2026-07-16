@@ -14,49 +14,41 @@ namespace punto2
     nombre en pantalla y Console.CursorVisible para ocultar el cursor.
      Generar un vector de 4 elementos y mostrarlos en distintas posiciones en la
     consola.*/
-     class ElementoPantalla
+    class elementoPantalla
     {
         private string nombre;
-        private int posX;
-        private int posY;
-        public string Nombre
+        private int posx;
+        private int posy;
+        public elementoPantalla()
         {
-            set { nombre = value; }
-            get { return nombre; }
+            Console.Write("ingresar el nombre de la clase: ");
+            nombre = Console.ReadLine();
+            Console.Write("ingresar la posicion del cursor sobre el eje x: ");
+            string linea = Console.ReadLine();
+            posx = int.Parse(linea);
+            Console.Write("ingresar la posicion del cursor sobre el eje y");
+            linea = Console.ReadLine();
+            posy = int.Parse(linea);
         }
-        public int PosX
-        {
-            set { posX = value; }
-            get { return posX; }
-        }
-        public int PosY
-        {
-            set { posY = value; }
-            get { return posY; }
-        }
-        public ElementoPantalla(string nombre, int posX, int posY)
-        {
-            Nombre = nombre;
-            PosX = posX;
-            PosY = posY;
-        }
-        public void Mostrar() 
+        public void mostrar()
         {
             Console.CursorVisible = false;
-            Console.SetCursorPosition(PosX, PosY);
-            Console.WriteLine("Nombre: " + Nombre);
+            Console.SetCursorPosition(posx, posy);
+            Console.Write(nombre);
         }
+    }
+    internal class Program
+    {
         static void Main(string[] args)
         {
-            ElementoPantalla ep = new ElementoPantalla("Agus", 30, 1);
-            ElementoPantalla ep1 = new ElementoPantalla("Thomy", 28, 3);
-            ElementoPantalla ep2 = new ElementoPantalla("Mateo", 26, 5);
-            ElementoPantalla ep3 = new ElementoPantalla("Vicky", 24, 7);
-            ep.Mostrar();
-            ep1.Mostrar();
-            ep2.Mostrar();
-            ep3.Mostrar();
-
+            elementoPantalla[] elementos = new elementoPantalla[4];
+            for (int t = 0; t < elementos.Length; t++)
+            {
+                elementos[t] = new elementoPantalla();
+                elementos[t].mostrar();
+            }
+            Console.ReadKey();
         }
     }
 }
+

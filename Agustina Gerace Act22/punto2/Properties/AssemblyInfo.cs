@@ -8,9 +8,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("punto2")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Escuela Confederacion Suiza")]
+[assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("punto2")]
-[assembly: AssemblyCopyright("Copyright © Escuela Confederacion Suiza 2026")]
+[assembly: AssemblyCopyright("Copyright ©  2026")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // El siguiente GUID sirve como id. de typelib si este proyecto se expone a COM.
-[assembly: Guid("ff678de0-781a-4b5b-9cdc-bdafbc3f1882")]
+[assembly: Guid("1839665e-6bbc-4d71-94b8-103f1954d5f9")]
 
 // La información de versión de un ensamblado consta de los cuatro valores siguientes:
 //
