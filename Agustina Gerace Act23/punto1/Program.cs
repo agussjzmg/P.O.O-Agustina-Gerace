@@ -29,6 +29,8 @@ namespace punto1
     class Documento
     {
         private string nomar;
+        //https://www.youtube.com/watch?v=37EIJThpc8U&list=RD37EIJThpc8U&start_radio=1
+        //http://youtube.com/watch?v=CXZ7Nz69OPg&list=PLq_UjttdaR_LfmnpSInmBCJdJPAstIw2J
         private int cantp;
         public string Nomar
         {
