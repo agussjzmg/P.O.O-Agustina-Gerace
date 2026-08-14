@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace punto1
+
 {
 
     /*1-
@@ -28,10 +29,14 @@ namespace punto1
     acumuladas en la cola de espera utilizando .Count.*/
     class Documento
     {
-        private string nomar;
-        //https://www.youtube.com/watch?v=37EIJThpc8U&list=RD37EIJThpc8U&start_radio=1
-        //http://youtube.com/watch?v=CXZ7Nz69OPg&list=PLq_UjttdaR_LfmnpSInmBCJdJPAstIw2J
-        private int cantp;
+        protected string nomar;
+        protected int cantp;
+        
+        public Documento (int cantp, string nomar)
+        {
+            Cantp = cantp;
+            Nomar = nomar;
+        }
         public string Nomar
         {
             set
@@ -46,7 +51,7 @@ namespace punto1
         public int Cantp
         {
             set
-            { 
+            {
                 cantp = value;
             }
             get
@@ -54,22 +59,28 @@ namespace punto1
                 return cantp;
             }
         }
+
     }
-        class ServidorImpresion
+
+    class ServidorImpresion
     {
-        List<Documento> lista = new List<Documento>();
-        public void AgregarArchivo(Documento nomar)
+        private Documento[] docu;
+        public List<Documento> lista = new List<Documento>();
+
+        public void AgregarDocumento()
         {
+
             string nom;
-            int cantp;
+            int cant;
             string linea;
             Console.Write("Ingrese el nombre del archivo: ");
             nom = Console.ReadLine();
-            lista.Add(nomar);
             Console.Write("Ingrese la cantidad de paginas: ");
             linea = Console.ReadLine();
-            cantp = int.Parse(linea);
-            lista.Add(cantp);
+            cant = int.Parse(linea);
+            Documento nuevodoc = new Documento(nom, cant)
+            Documento.Add(nuevodoc);
+            Console.Write("Documento añadido exitosamente")
         }
 
 
