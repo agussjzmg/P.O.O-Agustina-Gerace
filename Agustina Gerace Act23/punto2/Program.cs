@@ -6,7 +6,6 @@ using System.Threading.Tasks;
 
 namespace punto2
 {
-   {
 /*2-
 Una empresa de logística autónoma monitorea el estado y nivel de batería de sus
 drones de entrega en vuelo de regreso a la base.
@@ -86,7 +85,7 @@ cantidad de drones operativos utilizando la propiedad .Count.*/
         {
 
         }
-    }
+    
 
 
             static void Main(string[] args)
