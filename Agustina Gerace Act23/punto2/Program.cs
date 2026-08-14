@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Xml.Linq;
 
 namespace punto2
 {
+   {
 /*2-
 Una empresa de logística autónoma monitorea el estado y nivel de batería de sus
 drones de entrega en vuelo de regreso a la base.
@@ -26,10 +26,15 @@ sea menor o igual al 15% (ya que requieren mantenimiento
 automático urgente).
 4. MostrarDronesRestantes(): Imprimir la flota actualizada y la
 cantidad de drones operativos utilizando la propiedad .Count.*/
-    internal class Dron 
+     class Dron
     {
         private string cod;
         private int bat;
+        public Dron(string cod, int bat)
+        {
+            Codigo = cod;
+            CantBat = bat;
+        }
         public string Codigo
         {
             set
@@ -58,11 +63,31 @@ cantidad de drones operativos utilizando la propiedad .Count.*/
     }
     class ServidorImpresion
     {
+        private Dron[] drono;
         List<Dron> lista = new List<Dron>();
-        
-        static void Main(string[] args)
+        public ServidorImpresion()
         {
-            
+            drono = new Dron[4];
+            for (int t = 0; t < 4; t++)
+            {
+                drono[t] = new Dron();
+            }
+        }
+        public void Cargar()
+        {
+            for (int t = 0; t < drono.Length; t++)
+            {
+                string linea;
+                Console.Write("Ingrese el codigo: ");
+                drono[t].Codigo = Console.ReadLine();
+
+
+
+        {
+
         }
     }
+
+
+            static void Main(string[] args)
 }
