@@ -31,11 +31,11 @@ namespace punto1
     {
         protected string nomar;
         protected int cantp;
-        
-        public Documento (int cantp, string nomar)
+
+        public Documento(string nomar, int cantp)
         {
-            Cantp = cantp;
-            Nomar = nomar;
+            this.cantp = cantp;
+            this.nomar = nomar;
         }
         public string Nomar
         {
@@ -79,13 +79,30 @@ namespace punto1
             linea = Console.ReadLine();
             cant = int.Parse(linea);
             Documento nuevodoc = new Documento(nom, cant)
-            Documento.Add(nuevodoc);
+            Lista.Add(nuevodoc);
             Console.Write("Documento añadido exitosamente")
         }
-
+        public void ImprimirLista() 
+        {
+            if (lista.Count > 0)
+            {
+                Console.Write(Lista[0].Nomar + " " + Lista[0].Cantp)
+                Lista.RemoveAt(0);
+            }
+            else
+            {
+                Console.Write("No hay trabajos pendientes");
+            }
+        }
+        public void MostrarColaPendiente() 
+        {
+            Console.Write("Documentos que estan esperando a ser impresos " + Lista.Documento);
+            Console.Write("Cantidad: " + Lista.Count);
+        }
 
         static void Main(string[] args)
         {
+
         }
 
     }
