@@ -70,7 +70,7 @@ namespace punto2
         {
             foreach (dron d in drons)
             {
-                Console.WriteLine(d.Codigo + " " + d.Bateria);
+                Console.WriteLine(d.Codigo + " con " + d.Bateria + "% de bateria");
             }
         }
         public void RemoverDronesBajos()
@@ -87,7 +87,7 @@ namespace punto2
         {
             foreach (dron d in drons)
             {
-                Console.WriteLine(d.Codigo + " " + d.Bateria);
+                Console.WriteLine(d.Codigo + " con " + d.Bateria + "% de bateria");
             }
             Console.WriteLine(drons.Count());
         }
@@ -103,5 +103,4 @@ namespace punto2
             Console.ReadKey();
         }
     }
-}  }
-}
+}  
